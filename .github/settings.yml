@@ -1,0 +1,5 @@
+repository:
+  name: "ansible-workspace"
+  description: "Create a workspace for multiple tools to easier develop ansible playbooks with roles."
+  homepage: "https://rwxd.github.io/ansible_workspace/"
+  topics: "ansible, ansible-roles, workspace, tmuxp, vscode"
