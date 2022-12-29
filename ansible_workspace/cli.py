@@ -66,7 +66,7 @@ def tmuxp(
     ),
 ):
     ansible_roles_path = roles_path or find_ansible_roles_path(ansible_config)
-    roles = general(roles_config, ansible_config, ansible_roles_path)
+    roles = general(roles_config, ansible_config, ansible_roles_path, symlink_path)
     windows = []
     for role in roles:
         windows.append(
