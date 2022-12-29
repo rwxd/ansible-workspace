@@ -44,6 +44,8 @@ The workspace consists of:
 ansible-workspace vscode
 ```
 
+![VSCode Workspace](./docs/vscode-example.png)
+
 ```bash
 code ~/workspaces/example-project.code-workspace
 ```
@@ -56,14 +58,14 @@ The workspace consists of:
 - A window for each role defined in the requirements
 
 ```bash
-
-```bash
 ansible-workspace tmuxp
 ```
 
 ```bash
 tmuxp load -y ~/workspaces/example-project.tmuxp-workspace.yml
 ```
+
+![Tmuxp Workspace](./docs/tmuxp-example.png)
 
 ## Examples
 
