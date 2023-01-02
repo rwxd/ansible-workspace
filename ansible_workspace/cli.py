@@ -48,10 +48,16 @@ def general(
 @app.command()
 def tmuxp(
     roles_config: Optional[Path] = typer.Option(
-        None, "--roles-config", "-r", help="Path to roles config file"
+        None,
+        "--roles-config",
+        "-r",
+        help="Path to roles config file. Will be searched if not given.",
     ),
     ansible_config: Path = typer.Option(
-        Path.cwd().joinpath("ansible.cfg"), help="Path to ansible.cfg file"
+        Path.cwd().joinpath("ansible.cfg"),
+        "ansible-config",
+        "-c",
+        help="Path to ansible.cfg file",
     ),
     roles_path: Optional[Path] = typer.Option(
         None, envvar="ANSIBLE_ROLES_PATH", help="Path to the roles directory"
@@ -103,10 +109,16 @@ def tmuxp(
 @app.command()
 def vscode(
     roles_config: Optional[Path] = typer.Option(
-        None, "--roles-config", "-r", help="Path to roles config file"
+        None,
+        "--roles-config",
+        "-r",
+        help="Path to roles config file. Will be searched if not given.",
     ),
     ansible_config: Path = typer.Option(
-        Path.cwd().joinpath("ansible.cfg"), help="Path to ansible.cfg file"
+        Path.cwd().joinpath("ansible.cfg"),
+        "ansible-config",
+        "-c",
+        help="Path to ansible.cfg file",
     ),
     roles_path: Optional[Path] = typer.Option(
         None, envvar="ANSIBLE_ROLES_PATH", help="Path to the roles directory"
