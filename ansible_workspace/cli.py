@@ -55,7 +55,7 @@ def tmuxp(
     ),
     ansible_config: Path = typer.Option(
         Path.cwd().joinpath("ansible.cfg"),
-        "ansible-config",
+        "--ansible-config",
         "-c",
         help="Path to ansible.cfg file",
     ),
@@ -116,7 +116,7 @@ def vscode(
     ),
     ansible_config: Path = typer.Option(
         Path.cwd().joinpath("ansible.cfg"),
-        "ansible-config",
+        "--ansible-config",
         "-c",
         help="Path to ansible.cfg file",
     ),
