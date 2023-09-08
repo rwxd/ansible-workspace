@@ -1,0 +1,16 @@
+---
+roles:
+  - name: role1
+    version: v1.0.3
+    src: git@github.com:rwxd/ansible-role-subuid_subgid.git
+    scm: git
+
+  - name: role2
+    version: v1.0.2
+    src: git@github.com:rwxd/ansible-role-subuid_subgid.git
+    scm: git
+
+  - name: role3
+    version: master
+    src: git@github.com:rwxd/ansible-role-subuid_subgid.git
+    scm: git

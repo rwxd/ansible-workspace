@@ -1,4 +1,8 @@
 # Byte-compiled / optimized / DLL files
+test/roles/role1
+test/roles/role2
+test/roles/role3
+
 __pycache__/
 *.py[cod]
 *$py.class
