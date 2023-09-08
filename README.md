@@ -54,7 +54,7 @@ code ~/workspaces/example-project.code-workspace
 
 The workspace consists of:
 - A window for the playbook directory
-- A window to exectute ansible commands
+- A window to execute ansible commands
 - A window for each role defined in the requirements
 
 ```bash
