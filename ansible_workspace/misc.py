@@ -67,7 +67,7 @@ def handle_roles(
             if role.version in repo.get_tags():
                 repo.checkout(role.version)
             elif role.version in repo.get_local_branches():
-                repo.checkout(f'checkout {role.version}')
+                repo.checkout(role.version)
             elif f'origin/{role.version}' in repo.get_remote_branches():
                 repo.checkout_remote_branch(role.version)
         else:
